@@ -1,4 +1,4 @@
-package com.pggm.authlib.middlewares;
+package com.pggm.authlib.models;
 
 
 import lombok.AllArgsConstructor;
@@ -8,7 +8,9 @@ import lombok.Data;
 @Data
 public record RequestPathModel(
         String path,
-        String method
+        String method,
+
+        AuthPermissions authPermissions
 ) {
 
 }
